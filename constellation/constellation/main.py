@@ -48,8 +48,8 @@ def main():
     state[:,0,0] = np.array([])
 
     for idx in range(1,nsteps-1):
-        A = G*m_e/
-
+        mag_r = np.linalg.norm(state[0:3,0,idx-1])
+        A = G*m_e/mag_r
 
 
 
